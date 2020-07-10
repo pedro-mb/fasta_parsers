@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import argparse
 
 def getBestHits(file, out_file):
