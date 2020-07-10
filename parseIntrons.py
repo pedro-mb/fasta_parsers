@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import argparse
 
 def fasta_screen(fasta_file, out_file, max_length):
