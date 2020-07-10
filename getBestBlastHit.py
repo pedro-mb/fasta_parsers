@@ -31,7 +31,7 @@ def getBestHits(file, out_file):
 def main():
     parser = argparse.ArgumentParser(description='Get Best Blast Hit \
     using ncbi-blast outpu in tabular format (6)')
-    parser.add_argument('--query', required=True, metavar='ID file(s)', nargs='+',
+    parser.add_argument('--query', required=True, metavar='tab', nargs='+',
                         help='[REQUIRED] Blast output file in tab format (6)')
     parser.add_argument('-o', metavar='output', type=str,
                         help='[optional] extension of output file(s). if not specified,\
