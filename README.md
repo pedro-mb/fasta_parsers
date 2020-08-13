@@ -1,6 +1,25 @@
 # python_parsers
 General python scripts usefull in any workflow involving analysis of fasta files (nucleotides/aminoacids) or Blast outputs, 
 
+### gff2promoter.py
+
+Get promoter coordinates for all genes in a given gff file
+
+USAGE:
+```
+usage: gff2promoter.py [-h] --gff tab [--size INT] [--out STR] [--feature STR]
+
+Get promoter coordinates for genes based on gff
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --gff tab      gff file to analyse
+  --size INT     size in bp to fetch the promoters. Default: 1000
+  --out STR      Output file name
+  --feature STR  feature name from gff (3rd column) to be considered as
+                 promoter parent (default: gene)
+```
+
 
 ### filter_fasta.py 
 Used to filter a large fasta file based on a list of query IDs 
