@@ -3,7 +3,7 @@
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser(description='Get splicing junction boudary '
+    parser = argparse.ArgumentParser(description='Get splicing junction flanking '
                                        'coordinates based on intron coordinates ')
     parser.add_argument('--featCoord', required=True, metavar='STR',
                         help='[REQUIRED] file name, '
