@@ -80,3 +80,28 @@ optional arguments:
                         as query file(s) with "_BestHit.txt" extension
                        
 ```
+## getSJ_coordinates.py
+
+Get the coordinates flanking "donor" (D) or "acceptor" (A) site splicing junctions (SJ), based on a list of intron coordinates
+
+
+```
+usage: getSJ_coordinates.py [-h] --featCoord STR --SJtype STR [--window INT]
+                            [--out STR]
+
+Get splicing junction flanking coordinates based on intron coordinates
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --featCoord STR  [REQUIRED] file name, containing the coordinates to the
+                   feature to be considered. - File(s) with coordinates should
+                   have the following format <chr> <feature> <stt> <end>
+                   <strand> <id> <product> (e.g. output of gff2tab.pl [-I]
+                   script
+  --SJtype STR     Type of splicing junction to analyse. Use: A (for acceptor)
+                   or D (donor)
+  --window INT     window to get upstream and downstream coordinates. Default
+                   60.
+  --out STR        Output file name
+  
+  ```
